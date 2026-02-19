@@ -20,7 +20,6 @@ Uma Landing Page moderna, responsiva e interativa desenvolvida "na mão" (Vanill
 - **Menu Mobile**: Lógica de abrir/fechar e troca de ícones (Barras ↔ X).
 - **Modal de Contato**: Pop-up funcional com validação de e-mail via Regex antes do envio.
 - **Botão "Voltar ao Topo"**: Aparece apenas após rolar a página e possui rolagem suave.
-- **Integração de Formulário**: Configurado para uso com Formspree.
 
 ## 📂 Estrutura do Projeto
 
@@ -66,7 +65,6 @@ Para evoluir este projeto para um nível de produção real ou portfólio avanç
 
 1.  Clone o repositório ou baixe os arquivos.
 2.  Abra o arquivo `index.html` em qualquer navegador moderno.
-3.  Para testar o envio de e-mail, configure o `action` do formulário no `index.html` com seu código do Formspree.
 
 ---
 

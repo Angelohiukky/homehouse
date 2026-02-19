@@ -8,10 +8,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Landingpage exemplo</title>
+    <title>HomeHouse</title>
   </head>
   <body>
     <header>
+      <!-- Menu de navegação -->
       <nav id="navegacao">
         <i class="fa-solid fa-house-chimney-window">HomeHouse</i>
         <ul id="nav-list">
@@ -53,14 +54,14 @@
         <button class="btn-default btn-contact">Fale Conosco</button>
       </div>
     </header>
-    <main>
+    <main id="home">
       <section id="hero">
         <!-- As imagens do carrossel -->
         <div class="hero-slider">
           <div
             class="slide active"
             style="
-              background-image: url(&quot;https://images.unsplash.com/photo-1600596542815-27b88e54e6d1?q=80&w=1920&auto=format&fit=crop&quot;);
+              background-image: url(&quot;https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&quot;);
             "
           ></div>
           <div
@@ -123,7 +124,7 @@
           <!-- 3. Econômico -->
           <div class="card">
             <img
-              src="https://images.unsplash.com/photo-1580587771525-78b9dba3b91d?q=80&w=600&auto=format&fit=crop"
+              src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?q=80&w=1170&auto=format&fit=crop"
               alt="Casa de Vila"
             />
             <div class="card-content">
@@ -151,7 +152,7 @@
           <!-- 5. Médio -->
           <div class="card">
             <img
-              src="https://images.unsplash.com/photo-1484154218962-a1c002085d2f?q=80&w=600&auto=format&fit=crop"
+              src="https://images.unsplash.com/photo-1751998815716-4c969c75b3ed?q=80&w=687&auto=format&fit=crop"
               alt="Ap 2 Quartos"
             />
             <div class="card-content">
@@ -207,7 +208,7 @@
           <!-- 9. Médio/Alto -->
           <div class="card">
             <img
-              src="https://images.unsplash.com/photo-1600596542815-27b88e54e6d1?q=80&w=600&auto=format&fit=crop"
+              src="https://images.unsplash.com/photo-1550819115-7a75ea88904e?q=80&w=1087&auto=format&fit=crop"
               alt="Casa Bairro"
             />
             <div class="card-content">
@@ -235,7 +236,7 @@
           <!-- 11. Alto Padrão -->
           <div class="card">
             <img
-              src="https://images.unsplash.com/photo-1580587771525-78b9dba3b91d?q=80&w=600&auto=format&fit=crop"
+              src="https://images.unsplash.com/photo-1609081144289-eacc3108cd03?q=80&w=687&auto=format&fit=crop"
               alt="Casa Moderna"
             />
             <div class="card-content">
@@ -263,7 +264,7 @@
           <!-- 13. Alto Padrão -->
           <div class="card">
             <img
-              src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=600&auto=format&fit=crop"
+              src="https://images.unsplash.com/photo-1572164676843-7df9a04e3e31?q=80&w=764&auto=format&fit=crop"
               alt="Casa de Campo"
             />
             <div class="card-content">
@@ -277,7 +278,7 @@
           <!-- 14. Luxo -->
           <div class="card">
             <img
-              src="https://images.unsplash.com/photo-1613490493576-2f50248e2f7c?q=80&w=600&auto=format&fit=crop"
+              src="https://images.unsplash.com/photo-1597475681177-809cfdc76cd2?q=80&w=688&auto=format&fit=crop"
               alt="Casa de Praia"
             />
             <div class="card-content">
@@ -518,9 +519,10 @@
         <div class="footer-section">
           <h3>Contato</h3>
           <p>
-            <i class="fa-solid fa-location-dot"></i> Av. Paulista, 1000 - SP
+            <i class="fa-solid fa-location-dot"></i> Rua dos Sonhos, 123 -
+            Centro, Rio de Janeiro, RJ
           </p>
-          <p><i class="fa-solid fa-phone"></i> (11) 99999-9999</p>
+          <p><i class="fa-solid fa-phone"></i> (21) 97376-7603</p>
           <div class="social-icons">
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -530,44 +532,66 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2024 HomeHouse Imobiliária. Todos os direitos reservados.</p>
+        <p>
+          &copy; 2024 HomeHouse Imobiliária(fictício). Todos os direitos
+          reservados a RaizCode.com .
+        </p>
       </div>
     </footer>
 
     <!-- Botão Flutuante WhatsApp -->
-    <a href="https://wa.me/5511999999999" class="btn-whatsapp" target="_blank">
+    <a href="https://wa.me/5521973767603" class="btn-whatsapp" target="_blank">
       <i class="fa-brands fa-whatsapp"></i>
     </a>
 
     <!-- Botão Voltar ao Topo -->
     <a href="#" id="back-to-top" class="btn-back-to-top">
-        <i class="fa-solid fa-arrow-up"></i>
+      <i class="fa-solid fa-arrow-up"></i>
     </a>
 
     <!-- Modal de Contato -->
     <div id="contact-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>Entre em Contato</h2>
-            <p>Preencha o formulário abaixo e retornaremos em breve.</p>
-            
-            <!-- O action é onde a mágica acontece. Substitua pelo seu link do Formspree -->
-            <form id="contact-form" action="https://formspree.io/f/mdoqjkbw" method="POST">
-                <div class="form-group">
-                    <label for="name">Nome</label>
-                    <input type="text" id="name" name="name" required placeholder="Seu nome completo">
-                </div>
-                <div class="form-group">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" required placeholder="seu@email.com">
-                </div>
-                <div class="form-group">
-                    <label for="message">Mensagem</label>
-                    <textarea id="message" name="message" rows="4" required placeholder="Olá, gostaria de saber mais sobre..."></textarea>
-                </div>
-                <button type="submit" class="btn-default" style="width: 100%">Enviar Mensagem</button>
-            </form>
-        </div>
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Entre em Contato</h2>
+        <p>Preencha o formulário abaixo e retornaremos em breve.</p>
+
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Seu nome completo"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="seu@email.com"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              required
+              placeholder="Olá, gostaria de saber mais sobre..."
+            ></textarea>
+          </div>
+          <button type="submit" class="btn-default" style="width: 100%">
+            Enviar Mensagem
+          </button>
+        </form>
+      </div>
     </div>
 
     <script src="script.js"></script>
