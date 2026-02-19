@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Landingpage exemplo</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navegacao">
+        <i class="fa-solid fa-house-chimney-window">HomeHouse</i>
+        <ul id="nav-list">
+          <li class="nav-item">
+            <a href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#moradias">Moradias</a>
+          </li>
+          <li class="nav-item">
+            <a href="#servicos">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a href="#avaliacoes">Avaliações</a>
+          </li>
+        </ul>
+        <!--Menu de navegação mobile -->
+        <button class="btn-default btn-contact">Fale Conosco</button>
+        <button id="mobile-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+      <div id="mobile-menu">
+        <ul id="mobile-nav-list">
+          <li class="mobile-nav-item">
+            <a href="#home">Home</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#moradias">Moradias</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#servicos">Serviços</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#avaliacoes">Avaliações</a>
+          </li>
+        </ul>
+
+        <button class="btn-default btn-contact">Fale Conosco</button>
+      </div>
+    </header>
+    <main>
+      <section id="hero">
+        <!-- As imagens do carrossel -->
+        <div class="hero-slider">
+          <div
+            class="slide active"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1600596542815-27b88e54e6d1?q=80&w=1920&auto=format&fit=crop&quot;);
+            "
+          ></div>
+          <div
+            class="slide"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1920&auto=format&fit=crop&quot;);
+            "
+          ></div>
+          <div
+            class="slide"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1920&auto=format&fit=crop&quot;);
+            "
+          ></div>
+        </div>
+
+        <!-- O conteúdo de texto (fica por cima das imagens) -->
+        <div class="hero-content">
+          <h1>Não é só a compra de uma casa,<br />é o início de um lar!</h1>
+          <p>Encontre o imóvel dos seus sonhos com a melhor assessoria.</p>
+          <a href="#moradias" class="btn-default">Ver Imóveis</a>
+        </div>
+      </section>
+
+      <!-- Seção de Moradias (Grid) -->
+      <section id="moradias" class="section-padding">
+        <h2 class="section-title">Imóveis em Destaque</h2>
+
+        <div class="moradias-grid">
+          <!-- 1. Econômico -->
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=600&auto=format&fit=crop"
+              alt="Studio Centro"
+            />
+            <div class="card-content">
+              <h3>Studio no Centro</h3>
+              <p>
+                Praticidade e economia perto do metrô. Ideal para solteiros.
+              </p>
+              <span class="price">R$ 180.000</span>
+              <button class="btn-default">Ver Detalhes</button>
+            </div>
+          </div>
+
+          <!-- 2. Econômico -->
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=600&auto=format&fit=crop"
+              alt="Ap Compacto"
+            />
+            <div class="card-content">
+              <h3>Ap. Compacto</h3>
+              <p>2 dormitórios em condomínio com lazer completo.</p>
+              <span class="price">R$ 220.000</span>
+              <button class="btn-default">Ver Detalhes</button>
+            </div>
+          </div>
+
+          <!-- 3. Econômico -->
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1580587771525-78b9dba3b91d?q=80&w=600&auto=format&fit=crop"
+              alt="Casa de Vila"
+            />
+            <div class="card-content">
+              <h3>Casa de Vila</h3>
+              <p>Charme e segurança em rua fechada. Sem condomínio.</p>
+              <span class="price">R$ 280.000</span>
+              <button class="btn-default">Ver Detalhes</button>
+            </div>
+          </div>
+
+          <!-- 4. Médio -->
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=600&auto=format&fit=crop"
+              alt="Terreno"
+            />
+            <div class="card-content">
+              <h3>Terreno em Condomínio</h3>
+              <p>Lote de 500m² pronto para construir a casa dos sonhos.</p>
+              <span class="price">R$ 300.000</span>
+              <button class="btn-default">Ver Detalhes</button>
+            </div>
+          </div>
+
+          <!-- 5. Médio -->
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1484154218962-a1c002085d2f?q=80&w=600&auto=format&fit=crop"
+              alt="Ap 2 Quartos"
+            />
+            <div class="card-content">
+              <h3>Ap. Planejado</h3>
+              <p>Móveis planejados inclusos, varanda grill e 1 vaga.</p>
+              <span class="price">R$ 350.000</span>
+              <button class="btn-default">Ver Detalhes</button>
+            </div>
+          </div>
+
+          <!-- 6. Médio -->
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=600&auto=format&fit=crop"
+              alt="Sobrado"
+            />
+            <div class="card-content">
+              <h3>Sobrado Geminado</h3>
+              <p>3 dormitórios, suíte e quintal nos fundos.</p>
+              <span class="price">R$ 420.000</span>
+              <button class="btn-default">Ver Detalhes</button>
+            </div>
+          </div>
+
+          <!-- 7. Médio -->
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=600&auto=format&fit=crop"
+              alt="Apartamento Centro"
+            />
+            <div class="card-content">
+              <h3>Apartamento Garden</h3>
+              <p>Área externa privativa e localização privilegiada.</p>
+              <span class="price">R$ 450.000</span>
+              <button class="btn-default">Ver Detalhes</button>
+            </div>
+          </div>
+
+          <!-- 8. Médio/Alto -->
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1554995207-c18c203602cb?q=80&w=600&auto=format&fit=crop"
+              alt="Loft"
+            />
+            <div class="card-content">
+              <h3>Loft Industrial</h3>
+              <p>Pé direito duplo, conceito aberto e acabamento rústico.</p>
+              <span class="price">R$ 550.000</span>
+              <button class="btn-default">Ver Detalhes</button>
+            </div>
+          </div>
+
+          <!-- 9. Médio/Alto -->
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1600596542815-27b88e54e6d1?q=80&w=600&auto=format&fit=crop"
+              alt="Casa Bairro"
+            />
+            <div class="card-content">
+              <h3>Casa de Bairro</h3>
+              <p>Espaçosa, 4 quartos, jardim e garagem para 3 carros.</p>
+              <span class="price">R$ 600.000</span>
+              <button class="btn-default">Ver Detalhes</button>
+            </div>
+          </div>
+
+          <!-- 10. Médio/Alto -->
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?q=80&w=600&auto=format&fit=crop"
+              alt="Ap Alto Padrão"
+            />
+            <div class="card-content">
+              <h3>Ap. Vista Mar</h3>
+              <p>Andar alto, vista definitiva e acabamento em mármore.</p>
+              <span class="price">R$ 750.000</span>
+              <button class="btn-default">Ver Detalhes</button>
+            </div>
+          </div>
+
+          <!-- 11. Alto Padrão -->
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1580587771525-78b9dba3b91d?q=80&w=600&auto=format&fit=crop"
+              alt="Casa Moderna"
+            />
+            <div class="card-content">
+              <h3>Casa Minimalista</h3>
+              <p>Design moderno com amplo espaço e iluminação natural.</p>
+              <span class="price">R$ 850.000</span>
+              <button class="btn-default">Ver Detalhes</button>
+            </div>
+          </div>
+
+          <!-- 12. Alto Padrão -->
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=600&auto=format&fit=crop"
+              alt="Cobertura"
+            />
+            <div class="card-content">
+              <h3>Cobertura Duplex</h3>
+              <p>Jacuzzi privativa, 4 suítes e automação residencial.</p>
+              <span class="price">R$ 1.200.000</span>
+              <button class="btn-default">Ver Detalhes</button>
+            </div>
+          </div>
+
+          <!-- 13. Alto Padrão -->
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=600&auto=format&fit=crop"
+              alt="Casa de Campo"
+            />
+            <div class="card-content">
+              <h3>Casa de Campo</h3>
+              <p>Refúgio na natureza com lago, pomar e casa de hóspedes.</p>
+              <span class="price">R$ 1.500.000</span>
+              <button class="btn-default">Ver Detalhes</button>
+            </div>
+          </div>
+
+          <!-- 14. Luxo -->
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1613490493576-2f50248e2f7c?q=80&w=600&auto=format&fit=crop"
+              alt="Casa de Praia"
+            />
+            <div class="card-content">
+              <h3>Casa Pé na Areia</h3>
+              <p>Acesso exclusivo à praia, deck panorâmico e 5 suítes.</p>
+              <span class="price">R$ 1.800.000</span>
+              <button class="btn-default">Ver Detalhes</button>
+            </div>
+          </div>
+
+          <!-- 15. Luxo -->
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=600&auto=format&fit=crop"
+              alt="Mansão Luxo"
+            />
+            <div class="card-content">
+              <h3>Mansão de Luxo</h3>
+              <p>Acabamento premium, piscina e área gourmet completa.</p>
+              <span class="price">R$ 2.500.000</span>
+              <button class="btn-default">Ver Detalhes</button>
+            </div>
+          </div>
+
+          <!-- 16. Luxo -->
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?q=80&w=600&auto=format&fit=crop"
+              alt="Penthouse"
+            />
+            <div class="card-content">
+              <h3>Penthouse</h3>
+              <p>O topo da cidade. Heliponto, segurança armada e luxo total.</p>
+              <span class="price">R$ 3.200.000</span>
+              <button class="btn-default">Ver Detalhes</button>
+            </div>
+          </div>
+
+          <!-- 17. Super Luxo -->
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1505843513577-22bb7d21e455?q=80&w=600&auto=format&fit=crop"
+              alt="Fazenda"
+            />
+            <div class="card-content">
+              <h3>Fazenda Histórica</h3>
+              <p>Casarão colonial restaurado, haras e produção própria.</p>
+              <span class="price">R$ 5.000.000</span>
+              <button class="btn-default">Ver Detalhes</button>
+            </div>
+          </div>
+
+          <!-- 18. Investimento -->
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=600&auto=format&fit=crop"
+              alt="Flat"
+            />
+            <div class="card-content">
+              <h3>Flat Executivo</h3>
+              <p>Ótimo para investidores. Alta rentabilidade em aluguel.</p>
+              <span class="price">R$ 400.000</span>
+              <button class="btn-default">Ver Detalhes</button>
+            </div>
+          </div>
+
+          <!-- 19. Comercial -->
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=600&auto=format&fit=crop"
+              alt="Sala Comercial"
+            />
+            <div class="card-content">
+              <h3>Sala Comercial</h3>
+              <p>No centro financeiro. Recepção e sala de reuniões.</p>
+              <span class="price">R$ 320.000</span>
+              <button class="btn-default">Ver Detalhes</button>
+            </div>
+          </div>
+
+          <!-- 20. Super Luxo -->
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1592595896551-12b371d546d5?q=80&w=600&auto=format&fit=crop"
+              alt="Ilha"
+            />
+            <div class="card-content">
+              <h3>Ilha Privada</h3>
+              <p>
+                Exclusividade absoluta. Acesso apenas por barco ou helicóptero.
+              </p>
+              <span class="price">R$ 15.000.000</span>
+              <button class="btn-default">Ver Detalhes</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção de Serviços -->
+      <section id="servicos" class="section-padding">
+        <h2 class="section-title">Nossos Serviços</h2>
+
+        <div class="servicos-grid">
+          <!-- Serviço 1 -->
+          <div class="service-card">
+            <i class="fa-solid fa-key"></i>
+            <h3>Venda e Locação</h3>
+            <p>
+              Encontramos o cliente ideal para o seu imóvel com agilidade e
+              segurança jurídica.
+            </p>
+          </div>
+
+          <!-- Serviço 2 -->
+          <div class="service-card">
+            <i class="fa-solid fa-file-signature"></i>
+            <h3>Assessoria Jurídica</h3>
+            <p>
+              Cuidamos de toda a burocracia, contratos e certidões para você não
+              ter dor de cabeça.
+            </p>
+          </div>
+
+          <!-- Serviço 3 -->
+          <div class="service-card">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            <h3>Financiamento</h3>
+            <p>
+              Parceria com os principais bancos para aprovar seu crédito com as
+              melhores taxas.
+            </p>
+          </div>
+
+          <!-- Serviço 4 -->
+          <div class="service-card">
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+            <h3>Avaliação de Imóveis</h3>
+            <p>
+              Saiba o valor real do seu patrimônio com laudos técnicos precisos
+              e de mercado.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção de Avaliações (Depoimentos) -->
+      <section id="avaliacoes" class="section-padding">
+        <h2 class="section-title">O que dizem nossos clientes</h2>
+
+        <div class="avaliacoes-grid">
+          <!-- Depoimento 1 -->
+          <div class="testimonial-card">
+            <img
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop"
+              alt="Foto do Cliente"
+              class="avatar"
+            />
+            <p class="testimonial-text">
+              "A melhor experiência que já tive! Encontraram a casa exata que eu
+              queria em menos de duas semanas. Profissionalismo nota 10."
+            </p>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+            </div>
+            <h3>Carlos Mendes</h3>
+            <span>Comprou no Centro</span>
+          </div>
+
+          <!-- Depoimento 2 -->
+          <div class="testimonial-card">
+            <img
+              src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&auto=format&fit=crop"
+              alt="Foto do Cliente"
+              class="avatar"
+            />
+            <p class="testimonial-text">
+              "Estava com medo da burocracia do financiamento, mas a equipe
+              resolveu tudo. Hoje moro no meu sonho graças a vocês!"
+            </p>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+            </div>
+            <h3>Fernanda Oliveira</h3>
+            <span>Comprou Casa de Vila</span>
+          </div>
+
+          <!-- Depoimento 3 -->
+          <div class="testimonial-card">
+            <img
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop"
+              alt="Foto do Cliente"
+              class="avatar"
+            />
+            <p class="testimonial-text">
+              "Investi em dois apartamentos na planta com a assessoria deles e a
+              valorização foi incrível. Recomendo para investidores."
+            </p>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <h3>Roberto Almeida</h3>
+            <span>Investidor</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodapé (Footer) -->
+    <footer>
+      <div class="footer-content">
+        <!-- Coluna 1: Sobre -->
+        <div class="footer-section">
+          <h3><i class="fa-solid fa-house-chimney-window"></i> HomeHouse</h3>
+          <p>
+            Transformando sonhos em realidade. A sua parceira de confiança na
+            busca pelo imóvel perfeito.
+          </p>
+        </div>
+
+        <!-- Coluna 2: Links Rápidos -->
+        <div class="footer-section">
+          <h3>Links Rápidos</h3>
+          <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#moradias">Imóveis</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#avaliacoes">Depoimentos</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Contato e Redes -->
+        <div class="footer-section">
+          <h3>Contato</h3>
+          <p>
+            <i class="fa-solid fa-location-dot"></i> Av. Paulista, 1000 - SP
+          </p>
+          <p><i class="fa-solid fa-phone"></i> (11) 99999-9999</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 HomeHouse Imobiliária. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <!-- Botão Flutuante WhatsApp -->
+    <a href="https://wa.me/5511999999999" class="btn-whatsapp" target="_blank">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Botão Voltar ao Topo -->
+    <a href="#" id="back-to-top" class="btn-back-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- Modal de Contato -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Entre em Contato</h2>
+            <p>Preencha o formulário abaixo e retornaremos em breve.</p>
+            
+            <!-- O action é onde a mágica acontece. Substitua pelo seu link do Formspree -->
+            <form id="contact-form" action="https://formspree.io/f/mdoqjkbw" method="POST">
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" required placeholder="Seu nome completo">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Olá, gostaria de saber mais sobre..."></textarea>
+                </div>
+                <button type="submit" class="btn-default" style="width: 100%">Enviar Mensagem</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
