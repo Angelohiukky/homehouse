@@ -14,14 +14,26 @@ mobileBtn.addEventListener('click', () => {
     }
 });
 
-// Seleciona todos os links dentro do menu mobile
-const mobileLinks = document.querySelectorAll('#mobile-menu a');
+// Seleciona todos os links E botões dentro do menu mobile
+const mobileItems = document.querySelectorAll('#mobile-menu a, #mobile-menu button');
 
-mobileLinks.forEach(link => {
-    link.addEventListener('click', () => {
+mobileItems.forEach(item => {
+    item.addEventListener('click', () => {
         mobileMenu.classList.remove('open'); // Fecha o menu
         icon.classList.replace('fa-xmark', 'fa-bars'); // Reseta o ícone
     });
+});
+
+// Fecha o menu ao clicar fora dele (no resto da página)
+window.addEventListener('click', (e) => {
+    // Verifica se o menu está aberto e se o clique NÃO foi dentro do menu nem no botão de abrir
+    if (mobileMenu.classList.contains('open') &&
+        !mobileMenu.contains(e.target) &&
+        !mobileBtn.contains(e.target)) {
+
+        mobileMenu.classList.remove('open');
+        icon.classList.replace('fa-xmark', 'fa-bars');
+    }
 });
 
 // Lógica do Carrossel (Hero)
@@ -106,4 +118,15 @@ const elementsToAnimate = document.querySelectorAll('.card, .service-card, .test
 elementsToAnimate.forEach(el => {
     el.classList.add('scroll-hidden'); // Esconde eles inicialmente
     observer.observe(el); // Começa a vigiar
+});
+
+// Efeito de Mudança de Cor do Menu ao Rolar
+const header = document.querySelector('header');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) { // Se rolar mais de 50px
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
 });

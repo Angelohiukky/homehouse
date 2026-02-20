@@ -9,9 +9,10 @@ Uma Landing Page moderna, responsiva e interativa desenvolvida "na mão" (Vanill
 - **Layout Responsivo**:
   - **Flexbox**: Utilizado no cabeçalho e alinhamentos gerais.
   - **CSS Grid**: Utilizado nas seções de Imóveis, Serviços, Depoimentos e Rodapé. Uso avançado de `repeat(auto-fit, minmax(...))` para grades que se adaptam automaticamente sem media queries excessivas.
+  - **Card Layout Inteligente**: Uso de `flex-grow` e `margin-top: auto` para alinhar os botões na base dos cards, garantindo uniformidade visual mesmo com descrições de tamanhos variados.
 - **Animações**:
   - **Scroll Animation**: Elementos aparecem suavemente (`Fade In`) conforme a rolagem (Intersection Observer).
-  - **Micro-interações**: Efeitos de hover em botões e links, e animação de "pulso" no botão do WhatsApp.
+  - **Micro-interações**: Efeitos de hover exclusivos para os botões dos cards (scale + shadow), links de navegação e animação de "pulso" no botão do WhatsApp.
   - **Parallax**: Efeito de profundidade no fundo da seção Hero (Desktop).
 - **Mobile First**: Menu "Hambúrguer" exclusivo para mobile e adaptações de layout.
 
