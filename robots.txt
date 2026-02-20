@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Aponta para o sitemap (opcional se for one-page, mas boa prática)
+Sitemap: https://raizcode.com/sitemap.xml
