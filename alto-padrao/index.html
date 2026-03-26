@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark-mode-root">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Boutique Luxo | HomeHouse Exclusive</title>
+  <meta name="description"
+    content="A mais refinada seleção de Penthouses e Mansões. O mercado imobiliário elevado à arte." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- DEMO BAR RAIZCODE -->
+  <div class="demo-bar">
+    <div class="demo-logo">
+      <img src="../../images/raizcodelogo.jpg" alt="RaizCode Logo" style="height: 24px; vertical-align: middle;">
+    </div>
+    <div class="demo-switcher">
+      <span>Modelos Imobiliários:</span>
+      <a href="../imobiliaria/index.html" class="demo-link">Agência / Catálogo</a>
+      <a href="../corretor/index.html" class="demo-link">Personal Broker (Corretor)</a>
+      <a href="#" class="demo-link active">Boutique High-End</a>
+    </div>
+    <a href="../../index.html" class="demo-close">Sair <i class="fa-solid fa-xmark"></i></a>
+  </div>
+
+  <!-- NAV SUPERIOR (TRANSPARENTE OVERLAY) -->
+  <nav id="navbar">
+    <div class="container nav-flex">
+      <a href="#" class="logo">
+        <div class="logo-text">
+          HomeHouse<br>
+          <span>Exclusive Real Estate</span>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="#collection">A Coleção</a>
+        <a href="#about">Exclusividade</a>
+      </div>
+      <a href="https://raizcode.com#contato" class="btn-outline-gold">Private Desk</a>
+      <button class="mobile-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')"><i
+          class="fa-solid fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <!-- HERO FULLSCREEN -->
+  <header class="hero">
+    <div class="hero-bg"
+      style="background-image: url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2000&auto=format&fit=crop');">
+    </div>
+    <div class="hero-gradient"></div>
+
+    <div class="container hero-content scroll-anim">
+      <h1>A Arte de<br>Morar Bem.</h1>
+      <p>A mais refinada seleção de propriedades High-End no Brasil. Luxo, sigilo absoluto e curadoria arquitetônica sem
+        precedentes.</p>
+      <a href="#collection" class="btn-solid-gold mt-4">Explorar Coleção Privada</a>
+    </div>
+
+    <div class="scroll-down">
+      <span>Descubra</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+  </header>
+
+  <!-- INTRODUÇÃO / STATEMENT -->
+  <section id="about" class="section-padding bg-black">
+    <div class="container text-center max-w-800 scroll-anim">
+      <h2 class="title-serif gold-text">Nossa Filosofia</h2>
+      <p class="desc-text mt-3">Para a HomeHouse Exclusive, o luxo não é apenas um valor venal. É o design, a iluminação
+        natural, a privacidade e a localização irretocável.<br><br>Não possuímos um catálogo aberto de milhares de
+        casas. Trabalhamos exclusivamente com o Top 1% do mercado imobiliário: as <strong>Penthouses, Mansões
+          Contemporâneas e Fazendas mais cobiçadas</strong>.</p>
+    </div>
+  </section>
+
+  <!-- THE COLLECTION (Imagens gigantes) -->
+  <section id="collection" class="bg-black">
+
+    <!-- Propriedade 1 -->
+    <div class="luxury-prop scroll-anim">
+      <div class="luxury-img">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1500&auto=format&fit=crop"
+          alt="Mansão" loading="lazy" />
+        <div class="lux-badge">Nova Listagem</div>
+      </div>
+      <div class="luxury-info">
+        <div>
+          <h3 class="title-serif">Villa Piemonte</h3>
+          <p class="lux-location">Jardim Europa, São Paulo</p>
+        </div>
+
+        <div class="lux-specs">
+          <span><i class="fa-solid fa-bed"></i> 5 Suítes Master</span>
+          <span><i class="fa-solid fa-wine-glass"></i> Adega 500 garrafas</span>
+          <span><i class="fa-solid fa-water-ladder"></i> Piscina Aquecida</span>
+          <span><i class="fa-solid fa-maximize"></i> 1.200m² AC</span>
+        </div>
+
+        <div class="lux-action">
+          <span class="lux-price">R$ 25.000.000</span>
+          <a href="https://raizcode.com#contato" class="btn-solid-gold">Agendar Visita Pessoal</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Propriedade 2 -->
+    <div class="luxury-prop reverse scroll-anim" style="margin-top: -5px;">
+      <div class="luxury-img">
+        <img src="https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?q=80&w=1500&auto=format&fit=crop"
+          alt="Penthouse" loading="lazy" />
+      </div>
+      <div class="luxury-info">
+        <div>
+          <h3 class="title-serif">Sky Penthouse The One</h3>
+          <p class="lux-location">Itaim Bibi, São Paulo</p>
+        </div>
+
+        <div class="lux-specs">
+          <span><i class="fa-solid fa-bed"></i> 3 Suítes</span>
+          <span><i class="fa-solid fa-helicopter"></i> Heliponto Privativo</span>
+          <span><i class="fa-solid fa-shield-halved"></i> Segurança Nível 5</span>
+          <span><i class="fa-solid fa-maximize"></i> 650m² Triplex</span>
+        </div>
+
+        <div class="lux-action">
+          <span class="lux-price">R$ 32.000.000</span>
+          <a href="https://raizcode.com#contato" class="btn-solid-gold">Agendar Visita Pessoal</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Propriedade 3 -->
+    <div class="luxury-prop scroll-anim" style="margin-top: -5px;">
+      <div class="luxury-img">
+        <img src="https://images.unsplash.com/photo-1505843513577-22bb7d21e455?q=80&w=1500&auto=format&fit=crop"
+          alt="Fazenda" loading="lazy" />
+        <div class="lux-badge">Off-Market</div>
+      </div>
+      <div class="luxury-info">
+        <div>
+          <h3 class="title-serif">Haras Imperial</h3>
+          <p class="lux-location">Itu, Interior de SP</p>
+        </div>
+
+        <div class="lux-specs">
+          <span><i class="fa-solid fa-house-chimney"></i> Casarão Bandeirante</span>
+          <span><i class="fa-solid fa-horse-head"></i> Hípica Profissional</span>
+          <span><i class="fa-solid fa-tree"></i> Mata Nativa Intacta</span>
+          <span><i class="fa-solid fa-maximize"></i> 50 Alqueires</span>
+        </div>
+
+        <div class="lux-action">
+          <span class="lux-price">Sob Consulta (Sigilo Absoluto)</span>
+          <a href="https://raizcode.com#contato" class="btn-solid-gold">Qualificação Requerida</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer bg-black">
+    <div class="container text-center scroll-anim py-large" style="border-top: 1px solid rgba(212, 175, 55, 0.2);">
+      <h3 class="mb-2 title-serif gold-text" style="font-size: 2rem;">HomeHouse Exclusive</h3>
+      <p class="text-muted text-sm mb-4" style="letter-spacing: 0.1em; text-transform: uppercase;">A Autoridade em
+        High-End Real Estate</p>
+      <a href="https://raizcode.com#contato" target="_blank" class="btn-outline-gold mb-4"><i
+          class="fa-brands fa-whatsapp"></i> Acionar Concierge</a>
+      <p class="text-xs mt-4 opacity-50 text-white" style="font-family: var(--font-body); display: flex; align-items: center; justify-content: center; gap: 8px;">
+        © 2026 HomeHouse Exclusive LTDA. Powered by <img src="../../images/raizcodelogo.jpg" alt="RaizCode Logo" style="height: 16px; opacity: 0.8;">
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>HomeHouse | A sua Imobiliária de Confiança</title>
+  <meta name="description" content="Encontre o imóvel dos seus sonhos. Venda, Locação e Lançamentos com a melhor assessoria." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css?v=3" />
+</head>
+<body>
+
+<!-- DEMO BAR RAIZCODE -->
+<div class="demo-bar">
+  <div class="demo-logo">
+    <img src="../../images/raizcodelogo.jpg" alt="RaizCode Logo" style="height: 24px; vertical-align: middle;">
+  </div>
+  <div class="demo-switcher">
+    <span>Modelos Imobiliários:</span>
+    <a href="#" class="demo-link active">Agência / Catálogo</a>
+    <a href="../corretor/index.html" class="demo-link">Personal Broker (Corretor)</a>
+    <a href="../alto-padrao/index.html" class="demo-link">Boutique High-End</a>
+  </div>
+  <a href="../../index.html" class="demo-close">Sair <i class="fa-solid fa-xmark"></i></a>
+</div>
+
+<!-- NAV SUPERIOR -->
+<nav>
+  <div class="container nav-flex">
+    <a href="https://raizcode.com" class="logo">
+      <i class="fa-solid fa-city text-primary" style="font-size:2rem;"></i>
+      <div class="logo-text">
+        <strong>HomeHouse</strong>
+        Imóveis & Negócios
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="#imoveis">Comprar</a>
+      <a href="#imoveis">Alugar</a>
+      <a href="#servicos">Nossos Serviços</a>
+    </div>
+    <a href="https://raizcode.com#contato" target="_blank" class="btn-accent"><i class="fa-brands fa-whatsapp"></i> Fale com Corretor</a>
+  </div>
+</nav>
+
+<!-- HERO (Com Barra de Busca Complexa) -->
+<header class="hero">
+  <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1500&auto=format&fit=crop');"></div>
+  <div class="hero-overlay"></div>
+  
+  <div class="container hero-content scroll-anim">
+    <h1>Não é só a compra de uma casa.<br/><span>É o início de um lar!</span></h1>
+    <p>Acesse nosso catálogo robusto de mais de 3.000 imóveis na região, de estúdios compactos a grandes fazendas. Facilitamos o seu financiamento bancário.</p>
+    
+    <!-- Barra de Busca de Imobiliária Padrão -->
+    <div class="search-box">
+      <select class="search-input"><option>Comprar</option><option>Alugar</option><option>Lançamento</option></select>
+      <select class="search-input"><option>Tipo (Casa, Ap, Terreno)</option><option>Apartamento</option><option>Casa Condomínio</option><option>Sala Comercial</option></select>
+      <input type="text" class="search-input" placeholder="Digite cidade, bairro ou ref..." />
+      <button class="btn-accent" style="width: auto; border-radius:4px;"><i class="fa-solid fa-magnifying-glass"></i> Buscar 3.000+ Imóveis</button>
+    </div>
+  </div>
+</header>
+
+<!-- CATÁLOGO (Refinado do Original do Cliente) -->
+<section id="imoveis" class="section-padding bg-light">
+  <div class="container text-center scroll-anim">
+    <h2 class="title-dark">Imóveis em Destaque</h2>
+    <p class="subtitle text-muted" style="margin: 0 auto 3rem;">Filtramos as melhores oportunidades de rentabilidade e moradia no momento.</p>
+  </div>
+  
+  <div class="container prop-grid">
+    <!-- Card 1 (Studio) -->
+    <div class="prop-card scroll-anim">
+      <div class="prop-img">
+        <div class="badge bg-blue">Melhor Preço</div>
+        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=600&auto=format&fit=crop" alt="Studio Centro"/>
+      </div>
+      <div class="prop-info">
+        <h3>Studio Loft no Centro</h3>
+        <p class="desc">Praticidade e economia a 5min do metrô central. Alto retorno para locação.</p>
+        <div class="features">
+          <span><i class="fa-solid fa-bed"></i> 1 Quarto</span>
+          <span><i class="fa-solid fa-bath"></i> 1 Wc</span>
+          <span><i class="fa-solid fa-maximize"></i> 32m²</span>
+        </div>
+        <div class="prop-price">
+          <span class="price-val">R$ 180.000</span>
+          <a href="https://raizcode.com#contato" class="btn-outline">Detalhes</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MCMV 1 -->
+    <div class="prop-card scroll-anim" style="transition-delay:0.1s">
+      <div class="prop-img">
+        <div class="badge bg-green">Minha Casa Minha Vida</div>
+        <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=600&auto=format&fit=crop" alt="Ap Compacto"/>
+      </div>
+      <div class="prop-info">
+        <h3>Residencial Nova Vida</h3>
+        <p class="desc">Condomínio fechado com lazer completo. Entrada facilitada e documentação grátis. Use o FGTS!</p>
+        <div class="features">
+          <span><i class="fa-solid fa-bed"></i> 2 Quartos</span>
+          <span><i class="fa-solid fa-car"></i> 1 Vaga</span>
+          <span><i class="fa-solid fa-maximize"></i> 45m²</span>
+        </div>
+        <div class="prop-price">
+          <span class="price-val">R$ 220.000</span>
+          <a href="https://raizcode.com#contato" class="btn-outline">Detalhes</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MCMV 2 -->
+    <div class="prop-card scroll-anim" style="transition-delay:0.2s">
+      <div class="prop-img">
+        <div class="badge bg-green">Minha Casa Minha Vida</div>
+        <img src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?q=80&w=600&auto=format&fit=crop" alt="Casa de Vila"/>
+      </div>
+      <div class="prop-info">
+        <h3>Világios do Sol (Casas)</h3>
+        <p class="desc">Casas de vila com quintal privativo e sem taxa de condomínio. Subsídio do governo e parcelas que cabem no bolso.</p>
+        <div class="features">
+          <span><i class="fa-solid fa-bed"></i> 2 Quartos</span>
+          <span><i class="fa-solid fa-tree"></i> Quintal</span>
+          <span><i class="fa-solid fa-maximize"></i> 55m²</span>
+        </div>
+        <div class="prop-price">
+          <span class="price-val">R$ 260.000</span>
+          <a href="https://raizcode.com#contato" class="btn-outline">Detalhes</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="prop-card scroll-anim" style="transition-delay:0.1s">
+      <div class="prop-img">
+        <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=600&auto=format&fit=crop" alt="Sobrado"/>
+      </div>
+      <div class="prop-info">
+        <h3>Sobrado Geminado Moderno</h3>
+        <p class="desc">Bairro tranquilo, 3 dormitórios sendo 1 suíte master, e quintal espaçoso com churrasqueira.</p>
+        <div class="features">
+          <span><i class="fa-solid fa-bed"></i> 3 Quartos</span>
+          <span><i class="fa-solid fa-car"></i> 2 Vagas</span>
+          <span><i class="fa-solid fa-maximize"></i> 120m²</span>
+        </div>
+        <div class="prop-price">
+          <span class="price-val">R$ 420.000</span>
+          <a href="https://raizcode.com#contato" class="btn-outline">Detalhes</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="prop-card scroll-anim" style="transition-delay:0.2s">
+      <div class="prop-img">
+        <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?q=80&w=600&auto=format&fit=crop" alt="Loft"/>
+      </div>
+      <div class="prop-info">
+        <h3>Loft Estilo Industrial Concept</h3>
+        <p class="desc">Ambiente cosmopolita de altíssimo nível. Pé direito duplo de 6 metros e design assinado.</p>
+        <div class="features">
+          <span><i class="fa-solid fa-bed"></i> 1 Suíte</span>
+          <span><i class="fa-solid fa-car"></i> 1 Vaga</span>
+          <span><i class="fa-solid fa-maximize"></i> 85m²</span>
+        </div>
+        <div class="prop-price">
+          <span class="price-val">R$ 550.000</span>
+          <a href="https://raizcode.com#contato" class="btn-outline">Detalhes</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="prop-card scroll-anim">
+      <div class="prop-img">
+        <div class="badge bg-gold">Premium Selection</div>
+        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=600&auto=format&fit=crop" alt="Cobertura"/>
+      </div>
+      <div class="prop-info">
+        <h3>Cobertura Duplex Vue Mer</h3>
+        <p class="desc">A exclusividade tem nome. Jacuzzi instalada no rooftop, automação Alexa integrada e acabamento Armani.</p>
+        <div class="features">
+          <span><i class="fa-solid fa-bed"></i> 4 Suítes</span>
+          <span><i class="fa-solid fa-car"></i> 4 Vagas</span>
+          <span><i class="fa-solid fa-maximize"></i> 350m²</span>
+        </div>
+        <div class="prop-price">
+          <span class="price-val">R$ 3.200.000</span>
+          <a href="https://raizcode.com#contato" class="btn-outline">Detalhes</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="prop-card scroll-anim" style="transition-delay:0.1s">
+      <div class="prop-img">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=600&auto=format&fit=crop" alt="Sala Corporativa"/>
+      </div>
+      <div class="prop-info">
+        <h3>Laje Corporativa Tech</h3>
+        <p class="desc">Na principal avenida de negócios. Prédio AAA com certificação verde Leed e auditório para 200 pessoas.</p>
+        <div class="features">
+          <span><i class="fa-solid fa-building"></i> Office</span>
+          <span><i class="fa-solid fa-car"></i> 12 Vagas</span>
+          <span><i class="fa-solid fa-maximize"></i> 450m²</span>
+        </div>
+        <div class="prop-price">
+          <span class="price-val">Locação: R$ 15.000/m</span>
+          <a href="https://raizcode.com#contato" class="btn-outline">Detalhes</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="prop-card scroll-anim" style="transition-delay:0.2s">
+      <div class="prop-img">
+        <div class="badge bg-green">Na Planta (Off-Plan)</div>
+        <img src="https://images.unsplash.com/photo-1762146828422-50a8bd416d3c?w=600&auto=format&fit=crop" alt="Planta"/>
+      </div>
+      <div class="prop-info">
+        <h3>Residencial Vista Valley</h3>
+        <p class="desc">Invista no seu futuro. Empreendimento clube completo. Pagamento parcelado diretamente com a construtora civil.</p>
+        <div class="features">
+          <span><i class="fa-solid fa-hammer"></i> Em Construção</span>
+          <span><i class="fa-solid fa-calendar"></i> Entrega: Ago/2027</span>
+        </div>
+        <div class="prop-price">
+          <span class="price-val">A partir de R$ 280k</span>
+          <a href="https://raizcode.com#contato" class="btn-outline">Tabela</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="text-center mt-4 scroll-anim">
+    <a href="https://raizcode.com#contato" class="btn-primary-large">Carregar Nosso Acervo Inteiro de Imóveis</a>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section id="servicos" class="section-padding">
+  <div class="container text-center scroll-anim">
+    <h2 class="title-dark">Amparamos toda a sua jornada antes das chaves</h2>
+  </div>
+  <div class="container serv-grid mt-4">
+    <div class="serv-card scroll-anim">
+      <div class="serv-icon"><i class="fa-solid fa-key"></i></div>
+      <h3>Venda Ágil</h3>
+      <p>Nossa equipe encontra o cliente qualificado, usando marketing imobiliário inteligente.</p>
+    </div>
+    <div class="serv-card scroll-anim" style="transition-delay:0.1s">
+      <div class="serv-icon"><i class="fa-solid fa-file-signature"></i></div>
+      <h3>Assessoria Jurídica</h3>
+      <p>Cuidamos dos contratos, vistorias (com laudo fotográfico) e certidões grátis.</p>
+    </div>
+    <div class="serv-card scroll-anim" style="transition-delay:0.2s">
+      <div class="serv-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+      <h3>Financiamento Expresso</h3>
+      <p>Corretores Caixa/Itaú in-house para aprovar sua carta de crédito em minutos.</p>
+    </div>
+    <div class="serv-card scroll-anim" style="transition-delay:0.3s">
+      <div class="serv-icon"><i class="fa-solid fa-city"></i></div>
+      <h3>Administração de Aluguel</h3>
+      <p>Não pise mais na casa do inquilino. Nós vistoriamos e depositamos direto na sua conta.</p>
+    </div>
+  </div>
+</section>
+
+<!-- AVALIAÇÕES -->
+<section id="avaliacoes" class="section-padding bg-light">
+  <div class="container text-center scroll-anim">
+    <h2 class="title-dark">Aprovação que constrói histórias</h2>
+  </div>
+  <div class="container test-grid mt-4">
+    <div class="test-card scroll-anim">
+      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop" class="avatar" alt="Carlos" loading="lazy"/>
+      <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+      <p>"Vendi minha casa com eles em 30 dias. Tiraram fotos profissionais incríveis e lidaram com todo o cartório, eu só assinei."</p>
+      <h4>Carlos Mendes</h4><span class="text-xs text-muted uppercase">Vendeu Casa em Condomínio</span>
+    </div>
+    <div class="test-card scroll-anim" style="transition-delay:0.1s">
+      <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&auto=format&fit=crop" class="avatar" alt="Fernanda" loading="lazy"/>
+      <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+      <p>"Estava com medo do financiamento do meu primeiro apê. A moça do jurídico resolveu tudo, e já estou com a chave."</p>
+      <h4>Fernanda Oliveira</h4><span class="text-xs text-muted uppercase">Comprou 1º Imóvel</span>
+    </div>
+    <div class="test-card scroll-anim" style="transition-delay:0.2s">
+      <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop" class="avatar" alt="Roberto" loading="lazy"/>
+      <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+      <p>"Comprei dois apartamentos na planta para investidor. As taxas negociadas pela corretora deles foram as melhores do mercado."</p>
+      <h4>Dr Roberto Almeida</h4><span class="text-xs text-muted uppercase">Investidor Categoria A</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer bg-primary">
+  <div class="container text-center scroll-anim">
+    <h3 class="mb-2 text-white"><i class="fa-solid fa-city" style="color:var(--accent);"></i> HomeHouse Corretora</h3>
+    <p class="text-light text-sm mb-3">CRECI 009.281-J | CNPJ: 00.999.000/0001-00<br>Matriz: Av Empresarial Faria Lima, Itaim Bibi, SP.</p>
+    <a href="https://raizcode.com#contato" target="_blank" class="btn-accent" style="display:inline-flex"><i class="fa-brands fa-whatsapp"></i> Mandar um Whatsapp para Plantão</a>
+    <p class="text-xs mt-4 opacity-50 text-white">
+      © 2026 HomeHouse. Todos os direitos reservados. Fictício.<br>
+      <a href="https://raizcode.com" style="color:inherit; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 8px;">
+        Tecnologia Escalável <img src="../../images/raizcodelogo.jpg" alt="RaizCode Logo" style="height: 18px; opacity: 0.8;">
+      </a>
+    </p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
